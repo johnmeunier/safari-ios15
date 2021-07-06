@@ -9,6 +9,9 @@ body {
   background-color: var(--main-bg-color);
   padding: 0px;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -27,10 +30,13 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-size: 1.4rem;
-  /*padding-bottom: env(safe-area-inset-bottom, 0px);*/
 }
 
 nav a {
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+[data-safeenv="true"] nav {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
