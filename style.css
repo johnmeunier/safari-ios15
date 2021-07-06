@@ -26,8 +26,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 2rem;
-  padding-bottom: env(safe-area-inset-bottom);
+  font-size: 1.4rem;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 nav a {
