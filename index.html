@@ -11,7 +11,7 @@
 
   </head>
 
-  <body data-safeenv="false">
+  <body data-safesafearea="false">
     <h1>Démo Safari iOS 15</h1>
     <button class="safe-zone-switch">Safe zone switch</button>
     <h2>Safe zone disabled</h2>
@@ -25,10 +25,10 @@
   <script>
     document.querySelector('.safe-zone-switch').addEventListener('click', () => {
       const $body = document.querySelector("body");
-      $body.dataset.safeenv = $body.dataset.safeenv === "true" ? "false" : "true";
+      $body.dataset.safesafearea = $body.dataset.safesafearea === "true" ? "false" : "true";
 
       const $h2 = document.querySelector("h2");
-      $h2.innerText = $body.dataset.safeenv === "true" ? "Safe zone enabled" : "Safe zone disabled";
+      $h2.innerText = $body.dataset.safesafearea === "true" ? "Safe zone enabled" : "Safe zone disabled";
     })
   </script>
 
