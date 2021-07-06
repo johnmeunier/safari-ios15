@@ -18,6 +18,15 @@ h1 {
   text-align: center;
 }
 
+.wrapper {
+  width: calc(100% - 30px);
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 nav {
   background-color: var(--secondary-bg-color);
   position: fixed;
@@ -37,6 +46,5 @@ nav a {
 }
 
 [data-safearea="true"] nav {
-  /*padding-bottom: env(safe-area-inset-bottom, 0px);*/
-  margin-bottom: env(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
