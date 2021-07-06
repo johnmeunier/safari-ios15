@@ -37,5 +37,6 @@ nav a {
 }
 
 [data-safearea="true"] nav {
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  /*padding-bottom: env(safe-area-inset-bottom, 0px);*/
+  margin-bottom: env(safe-area-inset-bottom);
 }
