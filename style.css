@@ -6,7 +6,6 @@
 }
 
 body {
-  /*background-color: var(--main-bg-color);*/
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -29,7 +28,6 @@ h1 {
 
 nav {
   background-color: var(--secondary-bg-color);
-  position: fixed;
   bottom: 0px;
   left: 0px;
   width: 100%;
