@@ -19,7 +19,6 @@ h1 {
 }
 
 nav {
-  position: fixed;
   background-color: var(--secondary-bg-color);
   position: fixed;
   bottom: 0px;

@@ -11,10 +11,10 @@
 
   </head>
 
-  <body data-safesafearea="false">
+  <body data-safearea="false">
     <h1>Démo Safari iOS 15</h1>
-    <button class="safe-zone-switch">Safe zone switch</button>
-    <h2>Safe zone disabled</h2>
+    <button class="safe-zone-switch">Safe area switch</button>
+    <h2>Safe area disabled</h2>
     <a href="https://safari-ios15.netlify.app"> Lien de la démo</a>
     <nav>
       <a href="/">Nav bar</a>
@@ -26,10 +26,10 @@
   <script>
     document.querySelector('.safe-zone-switch').addEventListener('click', () => {
       const $body = document.querySelector("body");
-      $body.dataset.safesafearea = $body.dataset.safesafearea === "true" ? "false" : "true";
+      $body.dataset.safearea = $body.dataset.safearea === "true" ? "false" : "true";
 
       const $h2 = document.querySelector("h2");
-      $h2.innerText = $body.dataset.safesafearea === "true" ? "Safe zone enabled" : "Safe zone disabled";
+      $h2.innerText = $body.dataset.safearea === "true" ? "Safe area enabled" : "Safe area disabled";
     })
   </script>
 
